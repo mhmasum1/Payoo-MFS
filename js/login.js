@@ -11,7 +11,7 @@ document.getElementById('btn-login')
 
         // Step4: Validate phone or pin
         // This is temporary
-        if (phoneNumber === '5' && pinNUmber === '12345') {
+        if (phoneNumber === '5' && pinNUmber === '123') {
             console.log('You are Log in');
             window.location.href = '/home.html';
         }
