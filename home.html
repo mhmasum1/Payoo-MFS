@@ -5,10 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payoo Hpme Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-    <h1>Welcome to home page</h1>
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="mockup-phone-camera"></div>
+            <div
+                class="mockup-phone-display text-black grid place-content-center bg-gradient-to-br from-gray-100 to-gray-400">
+                <div class="w-full px-4">
+                    <div class="stats shadow">
+                        <div class="stat">
+                            <div class="stat-value text-black">9,400</div>
+                            <div class="stat-desc text-gray-700">Available Balance</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider w-full px-4"></div>
+                <!-- User action Buttons -->
+                <div>
+                    <button class="btn btn-lg">Add Money</button>
+                    <button class="btn btn-lg">Cash Out</button>
+                </div>
+                <div class="diverder"></div>
+
+                <!-- Add money form start-->
+                <div class="card-body">
+                    <form id="login-form">
+                        <fieldset class="fieldset">
+                            <label class="label" for="phone">Amount</label>
+                            <input id="phone-number" name="phone" type="text" class="input" placeholder="Amount"
+                                required />
+
+                            <label class="label" for="pin">Pin</label>
+                            <input id="input-pin" name="pin" type="password" class="input" autocomplete="off"
+                                placeholder="Pin" required />
+
+                            <button type="submit" id="btn-login" class="btn btn-neutral mt-4">Add Money</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <!-- Add money form end-->
+            </div>
+
+        </div>
+
+    </main>
+    <script src="js/home.js"></script>
 </body>
 
 </html>
