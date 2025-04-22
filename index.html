@@ -16,16 +16,25 @@
             <div class="mockup-phone-display text-black grid place-content-center">
                 <div class="hero bg-base-200 min-h-screen">
                     <div class="hero-content flex-col lg:flex-row-reverse">
-                        <div class="card bg-base-100 w-full max-w-sm shrink-0 ">
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0">
                             <div class="card-body">
-                                <fieldset class="fieldset">
-                                    <label class="label">Phone Number</label>
-                                    <input type="email" class="input" placeholder="Your Phone Number" />
-                                    <label class="label">Pin</label>
-                                    <input type="password" class="input" placeholder="Enter Your Pin" />
-                                    <div><a class="link link-hover">Forgot password?</a></div>
-                                    <button class="btn btn-neutral mt-4">Login</button>
-                                </fieldset>
+                                <form id="login-form">
+                                    <fieldset class="fieldset">
+                                        <label class="label" for="phone">Phone Number</label>
+                                        <input id="phone-number" name="phone" type="text" class="input"
+                                            placeholder="Your Phone Number" required />
+
+                                        <label class="label" for="pin">Pin</label>
+                                        <input id="" name="pin" type="password" class="input" autocomplete="off"
+                                            placeholder="Enter Your Pin" required />
+
+                                        <div>
+                                            <a href="#" class="link link-hover">Forgot password?</a>
+                                        </div>
+
+                                        <button type="submit" id="btn-login" class="btn btn-neutral mt-4">Login</button>
+                                    </fieldset>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -33,6 +42,8 @@
             </div>
         </div>
     </main>
+
+    <script src="js/login.js"></script>
 </body>
 
 </html>
