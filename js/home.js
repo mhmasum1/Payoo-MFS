@@ -27,6 +27,8 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
         const newBalance = addMoneyNumber + balanceNumber;
         console.log(newBalance);
 
+        // step6: Update the balance in the UI
+        document.getElementById('account-balance').innerText = newBalance;
 
 
     }
