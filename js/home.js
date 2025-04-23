@@ -12,20 +12,20 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
     // get the pin number provided
     const pinNumberInput = document.getElementById('input-pin-number').value;
     //console.log(typeof pinNumberInput)
+
     // step3: Verify pin number
     if (pinNumberInput === '123') {
-        // console.log('adding money to your account');
-
         // step4: get the current balance
         const balance = document.getElementById('account-balance').innerText;
         console.log(balance);
+
         // step5: add addMoneyInput with balance
         const addMoneyNumber = parseFloat(addMoneyInput);
         const balanceNumber = parseFloat(balance);
-        console.log(addMoneyNumber);
-        console.log(balanceNumber);
+        //console.log(addMoneyNumber);
+        //console.log(balanceNumber);
         const newBalance = addMoneyNumber + balanceNumber;
-        console.log(newBalance);
+        //console.log(newBalance);
 
         // step6: Update the balance in the UI
         document.getElementById('account-balance').innerText = newBalance;
